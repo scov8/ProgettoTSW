@@ -1,0 +1,57 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  background-color: #222429;
+}
+/* BASE */
+
+/* LAYOUT HOMEPAGE */
+.card-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "card1 card2 card3"
+    "footer footer footer";
+}
+
+nav {
+  border: 1px solid red;
+  grid-area: nav;
+}
+
+main {
+  border: 1px solid yellow;
+  grid-area: main;
+}
+
+.card-container {
+  border: 1px solid purple;
+}
+
+#card1 {
+  grid-area: card1;
+}
+
+#card2 {
+  grid-area: card2;
+}
+
+#card3 {
+  grid-area: card3;
+}
+
+/* FOOTER */
+footer {
+  border: 1px solid green;
+  grid-area: footer;
+}
